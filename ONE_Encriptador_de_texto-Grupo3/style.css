@@ -1,0 +1,147 @@
+:root{
+    --time: 2s cubic-bezier(.88,.89,.49,1.14);
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+
+body{
+    height: 100%;
+    background-color: #F3F5FC;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.header_img{
+    position: absolute;
+    /* margin: 40px 0 0 84px; */
+}
+
+.header_img > img{
+    position: relative;
+    left: 30px;
+    top: 20px;
+    width: 150%;
+    height: 55px;
+    animation: rotacion var(--time);
+}
+
+@keyframes rotacion {
+    0%{
+        left:-40px;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        left: 84px;
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+main {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+} 
+
+.input-texto {
+    margin-top: 90px;
+}
+
+.mensaje {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 90px;
+    background-image: url("imagenes/muñeco.png");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+
+}
+
+.copiar {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 205px;
+    background-color: white;
+    color:black;
+    border: 2px solid;
+    border-radius: 10px; 
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.encriptar {
+    background-color: darkblue;
+    color:white;
+    border: 2px solid;
+    border-radius: 10px; 
+}
+
+.encriptar:hover{
+    transform: scale(1.05);
+}
+
+.desencriptar {
+    margin-left: 30px;
+    background-color: #E5E5E5;
+    color:black;
+    border: 2px solid;
+    border-radius: 10px; 
+}
+
+.desencriptar:hover{
+    transform: scale(1.05);
+}
+
+.informacion {
+    font-size: 15px;
+}
+
+.copiar:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
